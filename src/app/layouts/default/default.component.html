@@ -1,1 +1,17 @@
-<p>default works!</p>
+<app-header (menuSideBarForMe)="sideBarToggler()"></app-header>  <!-- the initialiasation of the variable that i put it in the header.component.ts  -->
+
+
+<!-- <router-outlet></router-outlet>  -->  <!-- to show the contente of the child dashboard (1 method ) -->
+
+<!-- add the content to the page with the second method   -->
+<mat-drawer-container>
+    <mat-drawer mode='side' [opened]="sideBarOpen"> <app-sidebar></app-sidebar> </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>      <!-- this is the content of the children (dashboard and posts) -->
+    </mat-drawer-content>
+    
+</mat-drawer-container>
+
+
+
+<app-footer></app-footer> 

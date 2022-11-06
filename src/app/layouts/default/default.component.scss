@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+// the css for the block of the sidebare balise 
+mat-drawer {      
+    width: 350px;
+}
+
+
+// the css for the block of the sidebare and the content of the child components 
+mat-drawer-container {
+    height: 100%;
+}
+
+mat-drawer-content {
+    padding: 20px;
+}

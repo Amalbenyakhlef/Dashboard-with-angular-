@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { PostsComponent } from './modules/posts/posts.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,11 @@ const routes: Routes = [
     children: [
       {
         path: '', // this is for the child's path that is related to his dady defaultComponent
-        component: DashboardComponent,
+        component: DashboardComponent, // child 1
+      },
+      {
+        path: 'posts',  // to facilitate the redirection of the pages in our browser 
+        component: PostsComponent, //child 2
       },
     ],
   },

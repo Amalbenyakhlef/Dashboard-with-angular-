@@ -1,0 +1,51 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <!-- the first version  -->
+        <!-- <span> Third line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon"> favorite</mat-icon>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon"> delete </mat-icon> -->
+
+        <!-- the second version (the best ) -->
+        <!-- the menu -->  <!-- (click) : a function menuSideBar() to activate the menu icon  -->
+        <button mat-icon-button  (click)="menuSideBar()">  <!-- ************ this event should be received in default **********  -->
+            <mat-icon> menu</mat-icon>
+        </button>
+
+        <!-- the logo of the page  -->
+        <span> APP LOGO </span>
+
+        <!-- the block that containt the elements of the toolbar in the right side  -->
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign out 
+                        </button>
+                        
+                    </mat-menu>
+
+                </li>
+
+                
+
+            </ul>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>

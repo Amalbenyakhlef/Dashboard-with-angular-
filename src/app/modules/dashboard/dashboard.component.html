@@ -1,1 +1,31 @@
-<p>dashboard works!</p>
+
+<div>
+    <!-- Line charts -->
+    <app-widget-area></app-widget-area>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<!-- we're gonna remplace them with the real component to show the dashboard informations -->
+<div fxLayout="row"  fxLayoutAlign="space-between center" fxLayoutGap="20px"  class="stats-cards">
+    <!-- make all the cards under the chart and give to them a flex layout in the page zone -->
+   <mat-card fxFlex="25">
+    <app-widget-cards  label="Users"  total="12k" percentage="80"></app-widget-cards>    <!-- the content of the component cards  -->
+   </mat-card>
+   <mat-card fxFlex="25">
+    <app-widget-cards label="Users"  total="12k" percentage="80"></app-widget-cards>
+   </mat-card>
+   <mat-card fxFlex="25">
+    <app-widget-cards label="Users"  total="12k" percentage="80"></app-widget-cards>
+   </mat-card>
+   <mat-card fxFlex="25">
+    <app-widget-cards label="Users"  total="12k" percentage="80"></app-widget-cards>
+   </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div>
+    <div>Table</div>
+    <div>Pie chart</div>
+</div>
