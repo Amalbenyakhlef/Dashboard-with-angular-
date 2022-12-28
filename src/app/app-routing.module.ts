@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
+import { LoginComponent } from './user_login/login/login.component';
 
 const routes: Routes = [
   {
     path: '', // this is the parent's path
-    component: DefaultComponent,
+    component:LoginComponent ,
+    /* DefaultComponent */
     children: [
       {
         path: '', // this is for the child's path that is related to his dady defaultComponent
