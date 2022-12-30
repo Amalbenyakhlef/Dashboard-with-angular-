@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatDividerModule,
     FlexLayoutModule,
+    FormsModule,
     MatCardModule      // the module of the cards we use them in the dashboard component 
 
   ],

@@ -8,15 +8,19 @@ import { LoginComponent } from './user_login/login/login.component';
 const routes: Routes = [
   {
     path: '', // this is the parent's path
-    component:LoginComponent ,
-    /* DefaultComponent */
+    component: LoginComponent,
+
     children: [
+      {
+        /* DefaultComponent */ path: '/dashboard',
+        component: DefaultComponent,
+      },
       {
         path: '', // this is for the child's path that is related to his dady defaultComponent
         component: DashboardComponent, // child 1
       },
       {
-        path: 'posts',  // to facilitate the redirection of the pages in our browser 
+        path: 'posts', // to facilitate the redirection of the pages in our browser
         component: PostsComponent, //child 2
       },
     ],

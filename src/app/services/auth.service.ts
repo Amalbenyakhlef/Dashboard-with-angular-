@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { mongo} from '../Objects/database.config';
+// not yet done and i didn't know how to make this database.config that i found it in internet
 
 
 
